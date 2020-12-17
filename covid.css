@@ -1,0 +1,60 @@
+body {
+    background-color: whitesmoke;
+}
+.covidTitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 80px;
+    color:white;
+    background: url(assets/covidUS.jpg) center;
+    background-size: cover;
+    height: 30vh;
+    line-height: 250px;
+}
+
+.todaysData {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    height: 15vh;
+    line-height: 100px;
+    background-color: rgb(154, 155, 207);
+    margin: 0;
+}
+
+#dailyData {
+    font-family: "Raleway", sans-serif;
+    padding: 50px;
+}
+
+.container-fluid {
+    line-height: 100px;
+    border: black;
+    border-style: groove;
+    font-size: 20px;
+
+}
+.todaysState{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    height: 15vh;
+    line-height: 100px;
+    background-color: rgb(154, 155, 207);
+}
+
+#byState {
+    font-family: "Raleway", sans-serif;
+    padding: 50px;
+}
+
+
+.submit {
+    position: relative;
+    bottom: 3.15em;
+    left: 33em;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.text-center {
+    line-height: 150px;
+    font-family: "Raleway", sans-serif;
+}
