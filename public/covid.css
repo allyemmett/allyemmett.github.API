@@ -1,18 +1,23 @@
 body {
     background-color: whitesmoke;
 }
-.covidTitle {
-    font-family: "Raleway", sans-serif;
-    font-size: 80px;
+.jumbotron {
+    font-family: 'Heebo', serif;
     color:white;
     background: url(assets/covidUS.jpg) center;
     background-size: cover;
     height: 30vh;
     line-height: 250px;
+    text-align: center;
 }
 
+.display-4 {
+    font-size: 75px;
+}
+
+
 .todaysData {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Heebo', serif;
     color: white;
     height: 15vh;
     line-height: 100px;
@@ -21,7 +26,7 @@ body {
 }
 
 #dailyData {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Heebo', serif;
     padding: 50px;
 }
 
@@ -33,7 +38,7 @@ body {
 
 }
 .todaysState{
-    font-family: "Raleway", sans-serif;
+    font-family: 'Heebo', serif;
     color: white;
     height: 15vh;
     line-height: 100px;
@@ -41,20 +46,37 @@ body {
 }
 
 #byState {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Heebo', serif;
     padding: 50px;
 }
 
 
-.submit {
-    position: relative;
-    bottom: 3.15em;
-    left: 33em;
-    font-family: "Raleway", sans-serif;
-
-}
 
 .text-center {
-    line-height: 150px;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Heebo', serif;
 }
+
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+        text-align: center;
+       height: 200%;
+   }
+   .container-fluid {
+       height: 200%;
+   }
+   .todaysData {
+       height: 200%;
+   }
+   .todaysState {
+       height: 200%;
+   }
+   .row {
+       height: 500%;
+       width: 30%;
+   }
+
+   .text-center-link {
+       font-size: 90%;
+   }
+
+ }
