@@ -2,7 +2,7 @@ const baseURL = "https://api.covidtracking.com";
 let url;
 
 
-const col = document.getElementsByClassName("col-3");
+const col = document.getElementsByClassName("col");
 console.log(col);
 
 
@@ -12,6 +12,8 @@ fetch(`${baseURL}/v1/us/current.json`)
 
     function displayResultsDaily(json) { 
         console.log(json)
+
+        
         let covidData = json;
         if (covidData.length === 0) { 
             console.log('No results'); // no results will be shown if no data is available
@@ -83,6 +85,23 @@ searchForm.addEventListener('submit', displayResultsByState);
         function displayResultsByState(json){
             // json.preventDefault();
         let covidStateData = json;
+
+        while(col[9].firstChild) {
+            col[9].removeChild(col[9].firstChild)
+        }
+        while(col[10].firstChild) {
+            col[10].removeChild(col[10].firstChild)
+        }
+        while(col[11].firstChild) {
+            col[11].removeChild(col[11].firstChild)
+        }
+        while(col[12].firstChild) {
+            col[12].removeChild(col[12].firstChild)
+        }
+        while(col[13].firstChild) {
+            col[13].removeChild(col[13].firstChild)
+        }
+
         if (covidStateData.length === 0) { 
             console.log('No results'); 
         } else { 
@@ -116,9 +135,8 @@ searchForm.addEventListener('submit', displayResultsByState);
             stateTests.innerText = covidStateData.totalTestResults 
             console.log(stateTests)
             testDiv.appendChild(stateTests);
-
         }
-
+        
     }
     }
     
