@@ -4,7 +4,7 @@ body {
 .jumbotron {
     font-family: 'Heebo', serif;
     color:white;
-    background: url(../public/assets/covidUS.jpg) center;
+    background: url(/assets/covidUS.jpg) center;
     background-size: cover;
     height: 30vh;
     line-height: 250px;
@@ -16,9 +16,8 @@ h1 {
 }
 
 .display-4 {
-    font-size: 75px;
+    font-size: 9vh;
 }
-
 
 .todaysData {
     font-family: 'Heebo', serif;
@@ -34,12 +33,16 @@ h1 {
     padding: 50px;
 }
 
+.container {
+    width: 100%;
+}
 .container-fluid {
+    width: 100%;
     border: black;
     border-style: groove;
-    font-size: 20px;
-
+    font-size: 3vh;
 }
+
 .todaysState{
     font-family: 'Heebo', serif;
     color: white;
@@ -53,13 +56,11 @@ h1 {
     padding: 50px;
 }
 
-
-
 .text-center {
     font-family: 'Heebo', serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px){
     .jumbotron {
         text-align: center;
        height: 200%;
@@ -74,7 +75,7 @@ h1 {
        height: 200%;
    }
    .row {
-       height: 500%;
+       height: 200%;
        width: 30%;
    }
 
@@ -83,3 +84,8 @@ h1 {
    }
 
  }
+
+
+
+
+ 
