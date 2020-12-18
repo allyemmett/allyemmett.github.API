@@ -4,7 +4,7 @@ body {
 .jumbotron {
     font-family: 'Heebo', serif;
     color:white;
-    background: url(../public/assets/covidUS.jpg) center;
+    background: url(/assets/covidUS.jpg) center;
     background-size: cover;
     height: 30vh;
     line-height: 250px;
